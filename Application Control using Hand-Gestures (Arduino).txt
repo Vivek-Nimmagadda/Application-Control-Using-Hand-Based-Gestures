@@ -1,0 +1,26 @@
+import serial
+import pyautogui
+
+Arduino_Serial = serial.Serial('com3',9600) 
+
+while 1:
+    incoming_data = str (Arduino_Serial.readline()) 
+    print (incoming_data)                            
+     
+
+    if 'Pause' in incoming_data:                    
+        pyautogui.hotkey('a')          
+        
+    if 'Down' in incoming_data:                
+        pyautogui.hotkey('volumedown')          
+
+    if 'Up' in incoming_data:                    
+        pyautogui.hotkey('volumeup')
+    
+    if 'Next' in incoming_data:                    
+        pyautogui.hotkey('n')
+        
+    if 'Previous' in incoming_data:
+        pyautogui.hotkey('p')
+        
+    incoming_data = ' '
