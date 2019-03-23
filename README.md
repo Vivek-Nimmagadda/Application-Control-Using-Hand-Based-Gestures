@@ -1,0 +1,1 @@
+Now you can control various features of a music player application with simple hand-gestures using ultra-sonic sensors, accelerometer and a gyroscope. Want to learn more about the project?? Please feel free to give a glance at the project report provided above.
